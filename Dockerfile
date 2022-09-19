@@ -1,2 +1,4 @@
-FROM tomcat9
-RUN /target/*.war /usr/local/tomcat/webapps/wwp-1.0.0.war
+FROM openjdk:11
+EXPOSE 8080
+ADD target/apps10_mobiles.jar apps10_mobiles.jar
+ENTRYPOINT ["java","-jar","/apps10_mobiles.jar"]
