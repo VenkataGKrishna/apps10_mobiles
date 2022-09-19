@@ -1,4 +1,4 @@
 FROM openjdk:11
 EXPOSE 8080
-ADD target/apps10_mobiles.jar apps10_mobiles.jar
-ENTRYPOINT ["java","-jar","/apps10_mobiles.jar"]
+ADD target/mobiles-1.0-SNAPSHOT.jar mobiles-1.0-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar","/mobiles-1.0-SNAPSHOT.jar"]
